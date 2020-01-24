@@ -1,6 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import Layout from '../../components/Layout'
+import Layout from './Layout'
 
 function encode(data) {
   return Object.keys(data)
@@ -35,7 +35,7 @@ export default class Form extends React.Component {
 
   render() {
     return (
-        <section className="section">
+        <section className="section" style={{padding: '0rem 2.5rem'}}>
           <div className="container">
             <div className="content">
               <form
@@ -56,7 +56,6 @@ export default class Form extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'email'}>
-                    Email
                   </label>
                   <div className="control">
                     <input
@@ -71,7 +70,7 @@ export default class Form extends React.Component {
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    Send
+                    Submit For A Good Time
                   </button>
                 </div>
               </form>

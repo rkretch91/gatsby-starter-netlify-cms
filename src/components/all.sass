@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -48,8 +49,10 @@ $black: #2b2523
     background-size: cover
     background-position: bottom
     display: flex
-    justify-content: center
     align-items: center
+    @media screen and (min-width: 1200px)
+      background-attachment: fixed;
+
 
 .btn
     display: inline-block
@@ -93,6 +96,18 @@ $menu-item-active-background-color:	$kaldi-red-invert
 $menu-list-border-left: 1px solid $kaldi-red-invert
 $menu-label-color: $white-ter
 
+.input
+  background-color: rgba(255,255,255,0.6) !important
+  border-radius: 0px !important
+  border: none !important
+
+.button
+  background-color: transparent !important
+  color: darkgrey !important
+  font-family: 'Playfair Display', serif
+  font-weight: lighter
+  &:hover
+    font-weight: bold
 
 .menu-label
   font-size: 1em !important
