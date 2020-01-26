@@ -22,7 +22,8 @@ export default class Form extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
-    addToMailchimp(form)
+    const email = document.getElementById('email').value
+    addToMailchimp(email)
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
