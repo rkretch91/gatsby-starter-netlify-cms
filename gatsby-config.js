@@ -8,6 +8,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+        resolve: 'gatsby-plugin-mailchimp',
+        options: {
+            endpoint: "https://youtube.us4.list-manage.com/subscribe/post?u=73e7f6cd6ac8c8dae2de38921&amp;id=6f521c9b6d", // add your MC list endpoint here; see instructions below
+        },
+    },
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {

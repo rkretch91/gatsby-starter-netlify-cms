@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from './Layout'
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 function encode(data) {
   return Object.keys(data)
@@ -21,6 +22,7 @@ export default class Form extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
+    addToMailchimp(form)
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
