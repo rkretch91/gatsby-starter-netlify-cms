@@ -31,7 +31,7 @@ export const IndexPageTemplate = ({
           display: 'flex',
           height: '100px',
           justifyContent: 'space-around',
-          alignItems: 'left',
+          alignItems: 'center',
           flexDirection: 'column',
           padding: '0.6em 1em'
         }}
@@ -40,7 +40,7 @@ export const IndexPageTemplate = ({
           className="is-size-3-mobile is-size-2-tablet"
           style={{
             color: 'darkgrey',
-            lineHeight: '1',
+            lineHeight: '0.1em',
             padding: '1em',
             fontFamily: 'Playfair Display'
           }}

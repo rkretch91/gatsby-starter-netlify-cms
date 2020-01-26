@@ -53,6 +53,10 @@ $black: #2b2523
     @media screen and (min-width: 1200px)
       background-attachment: fixed;
 
+.change-size
+  align-items: center
+  @media screen and (min-width: 1000px)
+    align-items: center !important
 
 .btn
     display: inline-block
@@ -100,14 +104,20 @@ $menu-label-color: $white-ter
   background-color: rgba(255,255,255,0.6) !important
   border-radius: 0px !important
   border: none !important
+  font-family: 'Playfair Display', serif !important
 
 .button
-  background-color: transparent !important
-  color: darkgrey !important
+  background-color: rgba(211, 211, 211, 0.7) !important
+  border-color: transparent!important
+  border-radius: 0px !important
+  color: white !important
+  width: 100% !important
   font-family: 'Playfair Display', serif
-  font-weight: lighter
   &:hover
     font-weight: bold
+
+.control
+  font-family: 'Playfair Display', serif !important
 
 .menu-label
   font-size: 1em !important
