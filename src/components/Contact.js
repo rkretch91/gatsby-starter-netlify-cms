@@ -73,7 +73,7 @@ export default class Form extends React.Component {
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    submit email for a good time
+                    INSERT email for a good time
                   </button>
                 </div>
               </form>
